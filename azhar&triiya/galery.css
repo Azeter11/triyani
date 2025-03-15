@@ -1,0 +1,57 @@
+:root {
+  --primary-color: #25064c;      /* biru Bootstrap */
+  --secondary-color: #553285;    /* abu-abu */
+  --success-color: #9768d1;      /* hijau */
+  --danger-color: #dc3545;       /* merah */
+  --warning-color: #ffc107;      /* kuning */
+  --info-color: #0dcaf0;         /* biru muda */
+  --light-color: aliceblue;
+  --dark-color: #212529;
+}
+
+.mb-3 {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  border-radius: 5%;
+}
+
+.gallery-img {
+  width: 100px; /* Ubah ukuran sesuai selera */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.carousel-inner {
+  overflow: hidden;
+}
+
+.carousel-item {
+  padding: 10px;
+}
+
+@media (min-width: 576px) {
+  .gallery-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+

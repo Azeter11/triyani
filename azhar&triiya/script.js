@@ -1,0 +1,1 @@
+document.getElementById("todayCalendar").valueAsDate = new Date();

@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #25064c;      /* biru Bootstrap */
+    --secondary-color: #553285;    /* abu-abu */
+    --success-color: #9768d1;      /* hijau */
+    --danger-color: #dc3545;       /* merah */
+    --warning-color: #ffc107;      /* kuning */
+    --info-color: #0dcaf0;         /* biru muda */
+    --light-color: aliceblue;
+    --dark-color: #212529;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 20px;
+    font-family: "Pattaya", sans-serif;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.navbar-toggler {
+    background-color: var(--secondary-color);
+}
+
+span {
+    color: var(--light-color);
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: var(--light-color);
+}
+
+.nav-link:active {
+    color: var(--success-color);
+}
+
+.nav-link:hover {
+    color: var(--success-color);
+}
+
+.paragraf {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    font-family: "Silkscreen", serif;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.teks {
+    margin: 0 auto; /* Horizontally center */
+    position: relative;
+    top: 30%; /* Move down 50% of the viewport height */
+}
+
+/* Carousel Container Styling */
+#carouselExampleCaptions {
+    max-width: 100%;
+    max-height: 500px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Make image fit the container nicely */
+  .carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  /* Carousel Caption Styling */
+  .carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      height: 350px;
+    }
+  
+    .carousel-caption {
+      bottom: 10%;
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1.5rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-inner img {
+      height: 250px;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1.2rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .card-body {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: var(--success-color);
+  }
+
+  /* Responsive improvements */
+  @media (max-width: 768px) {
+    .card {
+      max-width: 90%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      padding: 8px 16px;
+    }
+  }

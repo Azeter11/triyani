@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #25064c;      /* biru Bootstrap */
+    --secondary-color: #553285;    /* abu-abu */
+    --success-color: #9768d1;      /* hijau */
+    --danger-color: #dc3545;       /* merah */
+    --warning-color: #ffc107;      /* kuning */
+    --info-color: #0dcaf0;         /* biru muda */
+    --light-color: aliceblue;
+    --dark-color: #212529;
+  }
+
+.playlist-section {
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+
+  .playlist-section:hover {
+    transform: translateY(-5px);
+  }
+
+  .playlist-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .playlist-header img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .playlist-header h5 {
+    margin: 0;
+    flex-grow: 1;
+    font-weight: bold;
+  }
+
+  .playlist-header i {
+    color: var(--dark-color);
+    font-size: 20px;
+  }
+
+  .song-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    padding: 12px 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: background 0.3s ease;
+  }
+
+  .song-item:hover {
+    background-color: var(--primary-color);
+  }
+
+  .song-title {
+    font-weight: 500;
+  }
+
+  .song-icons a {
+    color: #000;
+    margin-left: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  .song-icons a:hover {
+    color: #1DB954; /* Spotify Green */
+  }
+
+  @media (max-width: 576px) {
+    .song-title {
+      font-size: 14px;
+    }
+
+    .song-icons a {
+      font-size: 16px;
+    }
+  }
